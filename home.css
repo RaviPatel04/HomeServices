@@ -96,6 +96,9 @@ button {
     overflow: auto;
 }
 
+.providing span{
+    color: #3258DC;
+}
 
 .quality {
     margin: 95px;
