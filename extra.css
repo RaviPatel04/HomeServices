@@ -199,26 +199,27 @@ button {
         flex-direction: column;
         list-style-type: none;
         gap: 30px;
-        align-items: center;
+        align-items: start;
     }
 
     .all {
         position: fixed;
-        top: -5px;
-        width: 100%;
-        height: 60%;
-        background-color: #fff;
+        top: 0px;
+        left: 600px;
+        width: 40%;
+        height: 100%;
+        background-color: rgba(255, 255, 255);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: start; */
+        /* align-items: start; */
         z-index: 1;
-        transform: translateY(-100%);
+        transform: translateX(100%);
         transition: transform 0.3s ease;
     }
 
     .all.active {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .all a {
@@ -232,12 +233,56 @@ button {
     .close-icon {
         display: block;
         font-size: xx-large;
+        margin: 15px;
     }
     
     .man img {
-        display: none; /* Hide the image on smaller screens */
+        display: none;
     }
 }
+
+@media only screen and (max-width: 800px){
+    .all{
+        left: 500px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .all{
+        left: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .all{
+        left: 330px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .all{
+        left: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .all{
+        left: 240px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .all{
+        left: 215px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .all{
+        left: 185px;
+    }
+}
+
 
 @media only screen and (max-width: 500px){
      .providing {
