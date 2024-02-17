@@ -6,9 +6,12 @@
 }
 
 .main {
-    /* width: 100vw;
-    height: 630px; */
-    overflow-x: hidden;
+    width: 100vw;
+    height: 630px;
+    /* background-image: url(images/first.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),url("images/first.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 nav {
@@ -16,17 +19,18 @@ nav {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    height: 85px;
+    height: 70px;
+    background-color: white;
 }
 
 nav img {
     width: 130px;
     position: relative;
-    margin: 6px;
+    margin: 10px;
     padding: 10px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style-type: none;
 }
@@ -93,36 +97,43 @@ button {
     }
 }
 
-.first {
+.man {
     display: flex;
     justify-content: center;
     /* gap: 150px; */
 }
 
-.providing {
-    width: 477px;
+.proman{
+    width: 500px;
     height: 400px;
-    margin: 110px 0px 50px 5px;
+    margin: 20px;
+}
+
+.providing {
+    width: 500px;
+    height: 400px;
+    margin: 50px;
     font-size: 50px;
     font-family: 'Merriweather', serif;
     overflow: auto;
+    color: white;
 }
 
-.providing span{
-    color: #3258DC;
+.providing span {
+    color: black;
 }
 
 .quality {
     margin: 95px;
     margin-right: 0px;
-    color: #3258DC;
+    color: black;
 }
 
 .desc {
-    color: #5A5A5A;
+    color: black;
     font-size: 15px;
     text-align: justify;
-    margin-right: 50px;
+    margin-right: 60px;
     margin-top: 20px;
     letter-spacing: 1px;
     line-height: 1.6;
@@ -137,7 +148,7 @@ button {
     padding: 12px;
     margin-top: 20px;
     border-radius: 30px;
-    background-color: #5ca1e1;
+    background-color: #296dc6;
     border: none;
     color: #fff;
     text-align: center;
@@ -169,102 +180,17 @@ button {
     right: 10px;
 }
 
-.p1img{
-    width: 550px;
-    height: 590px;
-    /* margin: 0px 50px; */
-    display: flex;
-    flex-flow: row wrap;
-}
 
-.p1img1{
-    width: 235px;
-    height: 270px;
-    margin-left: 25px;
-    margin-right: -15px;
-    border-radius: 30px;
-    box-shadow: 0 15px 15px -4px rgb(0, 0, 0, 1);
-}
 
-.p1img2{
-    width: 201px;
-    height: 200px;
-    margin-right: 10px;
-    border-radius: 30px;
-    box-shadow: 0 15px 15px -4px rgb(0, 0, 0, 1);
-}
 
-.p1img3{
-    width: 295px;
-    height: 260px;
-    /* margin: 5px; */
-    border-radius: 30px;
-    box-shadow: 0 15px 15px -4px rgb(0, 0, 0, 1);
-}
 
-.menu-icon, .close-icon {
+.menu-icon,
+.close-icon {
     display: none;
     cursor: pointer;
 }
 
-.second{
-    display: flex;
-    justify-content: center;
-    background-color: #3258DC;
-}
-
-.p2img{
-    width: 477px;
-    height: 400px;
-    display: block;
-    flex-flow: row wrap;
-    margin: 110px 0px 50px 5px;
-    /* padding: 20px;
-    margin: 65px; */
-}
-
-.p2img1{
-    width: 221px;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0 5px 5px -4px rgb(0, 0, 0, 1);
-    border: 1.5px solid black;
-}
-
-.p2img2{
-    width: 221px;
-    height: 300px;
-    margin: -215px 0px 0px 108px;
-    border-radius: 20px;
-    box-shadow: 0 5px 5px -4px rgb(0, 0, 0, 1);
-    border: 1.5px solid black;
-}
-
-
-.why{
-    width: 550px;
-    height: 520px;
-    color: white;
-    margin-top: 100px;
-    font-size: 50px;
-    letter-spacing: 1.5px;
-    font-family: 'Merriweather', serif;
-    overflow: auto;
-}
-
-.whyanswer{
-    font-size: 15px;
-    line-height: 2;
-    margin: 40px 0px 0px 50px;
-    
-}
-
-.whyanswer ul{
-    list-style: square inside;
-}
-
-
-/* media query */
+/* Your existing CSS */
 
 @media only screen and (max-width: 950px) {
 
@@ -274,13 +200,14 @@ button {
 
     nav {
         max-width: 150vw;
+        margin-right: 20px;
         justify-content: space-between;
         display: flex;
         align-items: center;
         height: 100px;
     }
 
-    nav ul{
+    nav ul {
         margin-top: 15px;
         display: flex;
         flex-direction: column;
@@ -312,10 +239,6 @@ button {
     .all a {
         margin: 10px;
     }
-    
-    .menu-icon{
-        margin-right: 50px;
-    }
 
     .menu-icon.active {
         display: none;
@@ -326,75 +249,63 @@ button {
         font-size: xx-large;
         margin: 15px;
     }
-    
-    .p1img, .p2img {
-        display: none;
-    }
 
-    .why{
-        font-size: 40px;
-        margin: 15px;
+    .man img {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 800px){
-    .all{
+@media only screen and (max-width: 800px) {
+    .all {
         left: 500px;
     }
 }
 
-@media only screen and (max-width: 650px){
-    .all{
+@media only screen and (max-width: 650px) {
+    .all {
         left: 400px;
     }
 }
 
-@media only screen and (max-width: 550px){
-    .all{
+@media only screen and (max-width: 550px) {
+    .all {
         left: 330px;
     }
 }
 
-@media only screen and (max-width: 450px){
-    .all{
+@media only screen and (max-width: 450px) {
+    .all {
         left: 270px;
     }
 }
 
-@media only screen and (max-width: 400px){
-    .all{
+@media only screen and (max-width: 400px) {
+    .all {
         left: 240px;
     }
 }
 
-@media only screen and (max-width: 360px){
-    .all{
+@media only screen and (max-width: 360px) {
+    .all {
         left: 215px;
     }
 }
 
-@media only screen and (max-width: 320px){
-    .all{
+@media only screen and (max-width: 320px) {
+    .all {
         left: 185px;
     }
 }
 
 
-@media only screen and (max-width: 500px){
-    .providing, .why {
+@media only screen and (max-width: 500px) {
+    .providing {
         font-size: 20px;
-        margin: 50px;
     }
-    
+
     .desc {
         font-size: 12px;
         margin-right: 3px;
-    }
-
-    .whyanswer{
-        font-size: 10px;
-        margin-left: 0.5px;
-        line-height: 3;
     }
 }
 
@@ -402,7 +313,8 @@ button {
     .menu-icon {
         display: none;
     }
-    .close-icon{
+
+    .close-icon {
         display: none;
     }
 }
